@@ -1,0 +1,274 @@
+
+body{
+    
+    margin:0px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color:#40514E;
+}
+
+h1{ 
+   
+    
+   
+   font-size:4.5em;
+    color : #ac5757;
+   
+    margin-top:7%;
+    margin-left:32%; 
+   
+    position:absolute;
+   
+    z-index: 1;
+    
+}   
+h2,h3{
+    color:#ac5757;
+}
+.heading{ 
+   
+    font-size:2.5em;
+    color:#ac5757;
+    margin-top:17%;
+    width:25%;
+    left:38%;
+    position :absolute;
+    font-family: 'Montserrat', sans-serif;
+     z-index: 1;
+}
+.top-container{
+    margin-top: 0px;
+    background-color: #cffffe;
+    position:relative;
+    margin-bottom:100px;
+    
+}
+.plane{
+    width:5%;
+    position:absolute;
+    right:-200px;
+    animation-name:flying-plane;
+    animation-delay:1s;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function:linear;
+    z-index: 2;
+}
+
+@keyframes flying-plane{
+    0%{
+        top:50%;
+        left:100%;
+        opacity:1;
+    }
+    20%{
+        top:54%;
+
+    }
+    40%{
+       top:57%; 
+    }
+    70%{
+        top:53%
+    }
+    95%{
+        opacity:1;
+    }
+    100%{
+        top:45%;
+        left:0%;
+        opacity:0;
+    }
+
+}
+
+.bottom-cloud{
+    z-index:1;
+    position:absolute;
+    left:12%;
+    margin-top:26%;
+    width:30%;
+    animation-name:drift-right;
+    animation-duration:40s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay:0s;
+}
+@keyframes drift-right{
+   from{
+       left:5%;
+   }
+   to{
+       left:35%;
+   }
+}
+.top-cloud{
+    z-index:1;
+    margin-top:22%;
+    position:absolute;
+    left:75%;
+    width:25%;
+    animation-name: drift-left;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay:0s;
+}
+@keyframes drift-left{
+    from{
+        left:60%;
+    }
+    to{
+        left:75%;
+    }
+}
+.avatars-img{
+    width:200px;
+    height:200px;
+}
+
+.mountain{
+    position:relative;
+    
+    margin-top:28%;
+    
+   
+    max-height: 480px;
+    width: 100%;
+    
+
+
+   
+}
+.middle-container{
+    margin:20px auto;
+    text-align: center;
+    line-height: 2;
+    width:50%;
+}
+.intro{
+    display:inline;
+}
+
+
+hr{
+    border: dotted #EAF6F6 8px;
+   
+    width:10%;
+    border-bottom: none;
+    margin:30px auto;
+}
+.my-img{
+    margin-top:2%;
+    width:30%;
+   
+    
+}
+.profile{
+    text-align:center;
+}
+
+.code-img{
+    margin-top:2%;
+    width:30%;
+    float:right;
+    margin-left:30px;
+}
+
+.profile,.skills,.hobbies{
+   margin-top:10%;
+}
+
+.novel-img{
+  width:30%;
+  float:left;
+  margin-right:5%;
+
+}
+
+.bottom-container{
+    margin:20px auto;
+    padding:50px;
+    height:150px;
+    background-color: #66BFBF;
+    text-align: center;
+}
+
+
+.footer-link{
+    margin:20px;
+}
+
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #1199E9);
+    background-image: -moz-linear-gradient(top, #11CDD4, #1199E9);
+    background-image: -ms-linear-gradient(top, #11CDD4, #1199E9);
+    background-image: -o-linear-gradient(top, #11CDD4, #1199E9);
+    background-image: linear-gradient(to bottom, #11CDD4, #1199E9);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 13px 10px 13px;
+    text-decoration: none;
+    margin-top:60px; 
+  }
+  
+  .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #349BDB);
+    background-image: -moz-linear-gradient(top, #30E3CB, #349BDB);
+    background-image: -ms-linear-gradient(top, #30E3CB, #349BDB);
+    background-image: -o-linear-gradient(top, #30E3CB, #349BDB);
+    background-image: linear-gradient(to bottom, #30E3CB, #349BDB);
+    text-decoration: none;
+  }
+
+  a{
+      color:#11999E;
+      text-decoration: none;
+  }
+  a:hover{
+      color:#eaf6f6;
+  }
+
+.copyright{
+    color:#eaf6f6;
+    font-size: 0.75em;
+    padding:30px;
+}  
+
+@media screen and (max-width: 860px)
+{
+    h1{ 
+   
+    
+   
+        font-size:2em;
+        color : #ac5757;
+       
+        margin-top:7%;
+        margin-left:28%; 
+       
+        position:absolute;
+       
+        z-index: 1;
+        margin-bottom:15%;
+    }   
+    .heading{ 
+   
+        font-size:1.3em;
+        color:#ac5757;
+        margin-top:17%;
+        
+        left:2%;
+        width:100%;
+        position :absolute;
+        font-family: 'Montserrat', sans-serif;
+         z-index: 1;
+    }
+}
